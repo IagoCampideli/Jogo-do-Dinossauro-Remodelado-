@@ -1,0 +1,55 @@
+img {
+    width: 60px;
+    height: 60px;
+}
+body {
+    background: #021234;
+}
+
+.a001 {
+    position: absolute;
+    bottom: 0;
+    background-image: url('../img/mario-fundo.jpg');
+    background-repeat: repeat-x;
+    animation: slideright 6000s infinite linear;
+    width: 100%;
+    height: 200px;
+}
+.a002 {
+    width: 60px;
+    height: 60px;
+    background-image: url('../img/mario.png');
+    background-position: center;
+    background-size: cover;
+    position: absolute;
+    bottom: 0;
+}
+.a003 {
+    width: 40px;
+    height: 40px;
+    background-image: url('../img/casco.png');
+    background-position: center;
+    background-size: cover;
+    position: absolute;
+    bottom: 0;
+}
+.a004 {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    padding-top: 400px;
+    color: white;
+    font-weight: bold;
+    font-size: 50px;
+    font-family:fantasy ;
+    
+}
+
+@keyframes slideright {
+    from {
+        background-position: 70000%;
+    }
+    to {
+        background-position: 0;
+    }
+}
